@@ -1,0 +1,34 @@
+{
+    "logs": [
+        {
+            "outputFile": "/home/xk/runtime/workspace/cordova-email/platforms/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ur/values-ur.xml",
+            "map": [
+                {
+                    "source": "/home/xk/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/f7a1be6b75958697ff9957fdb54aeb74/res/values-ur/values-ur.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "102",
+                        "endOffsets": "153"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "/home/xk/runtime/workspace/cordova-vue/platforms/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ur/values-ur.xml",
+            "map": [
+                {
+                    "source": "/home/xk/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/f7a1be6b75958697ff9957fdb54aeb74/res/values-ur/values-ur.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "102",
+                        "endOffsets": "153"
+                    }
+                }
+            ]
+        }
+    ]
+}

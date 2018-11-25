@@ -1,0 +1,45 @@
+<!DOCTYPE html><html><head><meta charset=utf-8><meta name=format-detection content="telephone=no"><meta name=msapplication-tap-highlight content=no><meta name=viewport content="user-scalable=no,initial-scale=1,maximum-scale=1,minimum-scale=1,width=device-width"><meta http-equiv=pragma content=no-cache><meta http-equiv=cache-control content="no-store, must-revalidate"><link rel=stylesheet type=text/css href=./static/icomoon/style.css><title>Hello World</title><link href=./static/css/app.d6ce90023659ec14b63fa62aa08acdbb.css rel=stylesheet></head><body><div id=app></div><script type=text/javascript src=cordova.js></script><script type=text/javascript>document.addEventListener('deviceready', function () {
+                let counter = 0;
+                window.cordova && window.cordova.plugins.notification.local.schedule([{
+                    id: counter++,
+                    title: `test 0.9556990875595985`,
+                    text: `this is a test notification 0.36019978171808087`,
+                    foreground: true,
+                    actions: 'yes-no'
+                },{
+                    id: counter++,
+                    title: `test 0.234197520594996`,
+                    text: `this is a test notification 0.6135680322755326`,
+                    // foreground: true,
+                    progressBar: {value: 20}
+                    // actions: 'yes-no'
+                }]);
+                window.navigator.vibrate && window.navigator.vibrate([100, 100, 100]);
+
+                if (window.StatusBar) {
+                    window.xstatusBar = {
+                        style: StatusBar.styleLightContent,
+                        setStyle: function(fnName) {
+                            this.style = fnName;
+                            this.style();
+                        }
+                    }
+
+                    StatusBar.backgroundColorByHexString('#33000000');
+                    setInterval(function() {
+                        StatusBar.show();
+                        // xstatusBar.style();
+                    }, 0);
+                }
+                // alert(window.navigator.userAgent);
+                window.addEventListener('keyboardWillShow', function (e) {
+                    // alert('keyboardWillShow: ' + e.keyboardHeight);
+                });
+                window.addEventListener('keyboardDidShow', function (e) {
+                    // alert('keyboardDidShow: ' + e.keyboardHeight);
+                });
+                
+                window.addEventListener('backbutton', function (e) {
+                    // exit
+                });
+            }, false);</script><script type=text/javascript src=./static/js/manifest.d83ce619610be752b283.js></script><script type=text/javascript src=./static/js/vendor.ff417ff8ddb1cc4a95a7.js></script><script type=text/javascript src=./static/js/app.a6bb3dc71df34da8c18d.js></script></body></html>
